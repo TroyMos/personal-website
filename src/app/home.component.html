@@ -1,0 +1,116 @@
+<section id="overview" class="overview-section" aria-labelledby="overview-heading">
+  <div class="intro-copy">
+    <p class="kicker">troymoslemi.com</p>
+    <h1 id="overview-heading">{{ headline }}</h1>
+    <p class="lede">
+      I build software and communicate with stakeholders to push new features and fix bugs on production applications, working across databases, back-end services, and front-end interfaces.
+    </p>
+  </div>
+
+  <figure class="portrait">
+    <img [src]="photoPath" alt="Portrait of Troy Moslemi">
+    <figcaption>Troy Moslemi</figcaption>
+  </figure>
+</section>
+
+<section class="overview-grid" aria-label="Work experience and education">
+  <article class="panel">
+    <p class="section-label">Work Experience</p>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let item of workExperience">
+        <span>{{ item.label }}</span>
+        <div>
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.detail }}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="panel">
+    <p class="section-label">Education</p>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let item of education">
+        <span>{{ item.label }}</span>
+        <div>
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.detail }}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="company-callout" aria-label="Smart Software Solutions contact">
+  <p>
+    If you want personalized, client-first attention from expert software engineers, contact Smart Software Solutions. I love working with my coworkers and can vouch for how exceptional their skills are. I am genuinely impressed by them, and I am proud of my company’s client-first attention.
+  </p>
+  <a class="download-button" href="https://www.smartsoftwareinc.com/contact" target="_blank" rel="noreferrer">
+    Contact Smart Software Solutions
+  </a>
+</section>
+
+<section id="projects" class="projects-section" aria-labelledby="projects-heading">
+  <div class="section-heading">
+    <p class="section-label">Projects</p>
+    <h2 id="projects-heading">Games, teamwork, and technical problem solving.</h2>
+  </div>
+
+  <div class="project-list">
+    <article class="project-card" *ngFor="let project of projects">
+      <div>
+        <p>{{ project.date }}</p>
+        <h3>{{ project.name }}</h3>
+        <strong>{{ project.role }}</strong>
+        <span>{{ project.summary }}</span>
+      </div>
+      <a *ngIf="project.link" [href]="project.link" target="_blank" rel="noreferrer">{{ project.linkLabel }}</a>
+    </article>
+  </div>
+</section>
+
+<section id="resume" class="resume-section" aria-labelledby="resume-heading">
+  <div class="section-heading">
+    <p class="section-label">Resume</p>
+    <h2 id="resume-heading">Resume</h2>
+  </div>
+
+  <div class="resume-action">
+    <a class="download-button" [href]="resumePath" download="Troy-Moslemi-Resume.pdf">
+      Download Current Resume
+    </a>
+  </div>
+</section>
+
+<section id="reviews" class="reviews-section" aria-labelledby="reviews-heading">
+  <div class="section-heading">
+    <p class="section-label">Resume Review Services</p>
+    <h2 id="reviews-heading">Resume help from someone who remembers how rough the market feels.</h2>
+    <p>
+      I am passionate about helping others navigate a tough job market. When I was trying to get a job in the current tech market, with layoffs everywhere and openings feeling impossible to land, it was exhausting. There is hope, and I am willing to help people present their work more clearly.
+    </p>
+  </div>
+
+  <div class="review-list">
+    <article class="review-card" *ngFor="let review of reviews">
+      <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+      <blockquote>{{ review.quote }}</blockquote>
+      <cite>{{ review.name }}</cite>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+  <div>
+    <p class="section-label">Contact</p>
+    <h2 id="contact-heading">Contact</h2>
+    <p>
+      Want to talk software, projects, resume reviews, or something else? Email me and I will get back to you.
+    </p>
+  </div>
+
+  <div class="contact-actions">
+    <a class="download-button" [href]="emailLink">Email {{ emailAddress }}</a>
+    <a class="text-link contact-link" [href]="linkedInLink" target="_blank" rel="noreferrer">LinkedIn</a>
+  </div>
+</section>

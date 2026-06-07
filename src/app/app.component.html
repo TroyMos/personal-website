@@ -1,0 +1,19 @@
+<main class="site-shell">
+  <nav class="topbar" aria-label="Primary navigation">
+    <a class="brand" routerLink="/" fragment="overview" aria-label="Troy Moslemi home">
+      <span class="brand-mark">TM</span>
+      <span>{{ name }}</span>
+    </a>
+
+    <div class="nav-links">
+      <a routerLink="/" fragment="overview">Overview</a>
+      <a routerLink="/" fragment="projects">Projects</a>
+      <a routerLink="/" fragment="resume">Resume</a>
+      <a routerLink="/" fragment="reviews">Resume Reviews</a>
+      <a routerLink="/blogs">Blogs</a>
+      <a routerLink="/" fragment="contact">Contact</a>
+    </div>
+  </nav>
+
+  <router-outlet></router-outlet>
+</main>
