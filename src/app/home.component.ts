@@ -28,7 +28,7 @@ type Review = {
   templateUrl: './home.component.html'
 })
 export class HomeComponent implements AfterViewInit {
-  readonly headline = 'Software Engineer at Smart Software Solutions, a small consulting business that puts the client first.';
+  readonly headline = 'Software Engineer who cares about the human side of building software.';
   readonly photoPath = '/assets/troy-moslemi-photo.jpeg';
   readonly resumePath = '/assets/troy-moslemi-resume.pdf';
   readonly emailAddress = 'troy@troymoslemi.com';

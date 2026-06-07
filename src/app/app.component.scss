@@ -171,7 +171,6 @@ code {
 .panel,
 .project-card,
 .review-card,
-.company-callout,
 .contact-section {
   border: 2px solid rgba(30, 27, 23, 0.22);
   border-radius: 8px;
@@ -193,27 +192,6 @@ code {
 .project-card,
 .review-card {
   padding: 24px;
-}
-
-.company-callout {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin-top: 18px;
-  padding: 24px;
-}
-
-.company-callout p {
-  max-width: 720px;
-  margin-bottom: 0;
-  color: #40564d;
-  font-size: 1.04rem;
-  line-height: 1.6;
-}
-
-.company-callout a {
-  flex: 0 0 auto;
 }
 
 .timeline {
@@ -392,7 +370,6 @@ code {
   }
 
   .topbar,
-  .company-callout,
   .contact-section {
     align-items: flex-start;
     flex-direction: column;
